@@ -1,0 +1,10 @@
+extends base
+
+block contents
+    if errorMessage
+        span=errorMessage
+    form(method="POST")
+        input(name="title", type="text", placeholder ="Title", required, maxlength=50)
+        input(name="description", type="text", placeholder ="Description", required, maxlngth=100)
+        input(name="hashtags", type="text", placeholder ="Hashtags, separated by comma.", required)
+        input(type="submit", value="Upload")

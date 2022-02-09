@@ -1,0 +1,7 @@
+mixin infos(info)
+    div
+        h2
+            a(href=`/videos/${info.id}`)=info.title
+        p=info.description 
+        small=info.createdAt 
+        hr

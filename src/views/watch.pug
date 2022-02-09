@@ -1,0 +1,7 @@
+extends base
+
+block contents
+    div
+        p=video.description
+        small=video.createdAt
+    a(href=`${video.id}/edit`) Edit Video &rarr;
